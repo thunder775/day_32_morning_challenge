@@ -24,8 +24,8 @@ class Shiritori {
   List<String> words = [];
   bool game_over= false;
 
-  bool play(String word) {
-    while (game_over==false) {
+  bool play(String word) {ok
+    if (game_over==false) {
       if (words.isEmpty) {
         words.add(word);
         return true;
