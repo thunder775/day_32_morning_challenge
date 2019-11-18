@@ -13,8 +13,7 @@ void main() {
     expect(shiritori.play('elephant'), true);
     expect(shiritori.words.length, 3);
     expect(shiritori.play('lion'), false);
-    expect(shiritori.words.isEmpty, true);
-    expect(shiritori.restart, 'game over');
+    expect(shiritori.restart, 'game restarted');
 
   });
 }
