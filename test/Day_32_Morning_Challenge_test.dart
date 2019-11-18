@@ -3,6 +3,7 @@ import '../bin/main.dart';
 
 void main() {
   Shiritori shiritori= Shiritori();
+
   test("test case 1", () {
 //    expect(shiritori.restart, shiritori.wordsList.isEmpty);
     expect(shiritori.words.isEmpty, true);

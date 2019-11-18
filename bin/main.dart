@@ -20,18 +20,20 @@
 
 import 'dart:io';
 
-class Shiritori{
-  List words;
+class Shiritori {
+  List words =[];
   bool game_over;
 
+  bool play(String word) {
 
-  bool play(String word){
     return true;
   }
 
-  restart(){
+  String restart() {
+    words = [];
+    game_over = false;
+    return 'game restarted';
   }
 }
-main() {
 
-}
+main() {}
