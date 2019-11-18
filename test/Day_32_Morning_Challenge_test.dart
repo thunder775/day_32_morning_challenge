@@ -16,5 +16,6 @@ void main() {
     expect(shiritori.restart(), 'game restarted');
 
   });
+
 }
 
