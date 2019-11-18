@@ -17,5 +17,21 @@
 // game_over boolean to false. It should return "game restarted".
 
 //change by kapil
+
+import 'dart:io';
+
+class Shiritori{
+  List words;
+  bool game_over;
+
+
+  bool play(String word){
+    return true;
+  }
+
+  restart(){
+  }
+}
 main() {
+
 }
