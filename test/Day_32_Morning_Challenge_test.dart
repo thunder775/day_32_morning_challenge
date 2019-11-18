@@ -33,6 +33,7 @@ void main() {
     expect(shiritori.game_over, false);
     expect(shiritori.play('eorange'), true);
     expect(shiritori.play('eorange'), false);
+    expect(shiritori.game_over, true);
 
   });
 
