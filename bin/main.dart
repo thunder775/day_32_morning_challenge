@@ -21,12 +21,23 @@
 import 'dart:io';
 
 class Shiritori {
-  List words =[];
+  List<String> words = [];
   bool game_over;
 
   bool play(String word) {
-
-    return true;
+    if (words.isEmpty) {
+      words.add(word);
+      return true;
+    } else if (words.contains(word)) {
+      game_over = true;
+      return false;
+    } else if (words.last[words.last.length - 1] == word[0]) {
+      words.add(word);
+      return true;
+    } else {
+      game_over = true;
+      return false;
+    }
   }
 
   String restart() {
@@ -36,4 +47,8 @@ class Shiritori {
   }
 }
 
-main() {}
+main() {
+  Shiritori player = Shiritori();
+  print(player.play('hello'));
+  print(player.play('ohello'));
+}
